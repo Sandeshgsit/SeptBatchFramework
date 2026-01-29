@@ -34,6 +34,7 @@ public class DriverFactory {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getInt("ImplicitWait")));
 		
+		System.out.println("Added by tester B");
 		return driver;
 	}
 
